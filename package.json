@@ -1,0 +1,22 @@
+{
+  "name": "ellipsis-truncate",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "description": "Truncate text with ellipsis — by characters, bytes, or words",
+  "keywords": ["truncate", "ellipsis", "text", "byte", "word"],
+  "license": "MIT",
+  "author": "SeongBin Lim",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HCG-LimSB/ellipsis-truncate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HCG-LimSB/ellipsis-truncate/issues"
+  },
+  "homepage": "https://github.com/HCG-LimSB/ellipsis-truncate#readme",
+  "files": [
+    "src"
+  ]
+}
