@@ -1,11 +1,17 @@
 {
   "name": "ellipsis-truncate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "src/index.js",
   "exports": "./src/index.js",
   "description": "Truncate text with ellipsis — by characters, bytes, or words",
-  "keywords": ["truncate", "ellipsis", "text", "byte", "word"],
+  "keywords": [
+    "truncate",
+    "ellipsis",
+    "text",
+    "byte",
+    "word"
+  ],
   "license": "MIT",
   "author": "SeongBin Lim",
   "repository": {
