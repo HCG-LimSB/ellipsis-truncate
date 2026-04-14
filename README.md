@@ -66,6 +66,14 @@ ELLIPSIS.SPACE   // ' '
 ELLIPSIS.EMPTY   // ''        (silent truncation)
 ```
 
+Presets are optional — any string works as the ellipsis argument.
+
+```js
+truncateByChar('Hello, world!', 5, ' 더보기'); // 'Hello 더보기'
+truncateByChar('Hello, world!', 5, ' →');      // 'Hello →'
+truncateByChar('Hello, world!', 5, '💬');      // 'Hello💬'
+```
+
 ---
 
 ### `createTruncator(options?)`
