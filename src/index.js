@@ -18,12 +18,12 @@ export const ELLIPSIS = {
 
 /**
  * 문자 수 기준 자르기
- * @param {string} text
+ * @param {string} text // 또는 null/undefined 허용
  * @param {number} maxLength
  * @param {string} ellipsis
  */
 export const truncateByChar = (text, maxLength, ellipsis = ELLIPSIS.DOT) => {
-  if (!text) return '';
+  if (typeof text !== 'string') return '';
   if (text.length <= maxLength) return text;
   return text.slice(0, maxLength) + ellipsis;
 };
@@ -35,7 +35,7 @@ export const truncateByChar = (text, maxLength, ellipsis = ELLIPSIS.DOT) => {
  * @param {string} ellipsis
  */
 export const truncateByByte = (text, maxBytes, ellipsis = ELLIPSIS.DOT) => {
-  if (!text) return '';
+  if (typeof text !== 'string') return '';
   const encoder = new TextEncoder();
   if (encoder.encode(text).length <= maxBytes) return text;
 
@@ -60,7 +60,7 @@ export const truncateByByte = (text, maxBytes, ellipsis = ELLIPSIS.DOT) => {
  * @param {string} ellipsis
  */
 export const truncateByWord = (text, maxLength, ellipsis = ELLIPSIS.DOT) => {
-  if (!text) return '';
+  if (typeof text !== 'string') return '';
   if (text.length <= maxLength) return text;
 
   const trimmed = text.slice(0, maxLength);
